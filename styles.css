@@ -40,30 +40,27 @@ body {
 
 .reviews-container {
   background-color: red;
-  /* max-width: 800px; */
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .reviews-container > :first-child {
-  background-color: green;
   align-self: flex-start;
 }
 
 .reviews-container > :nth-child(2) {
-  background-color: purple;
   align-self: center;
 }
 
 .reviews-container > :nth-child(3) {
-  background-color: orange;
   align-self: flex-end;
 }
 
 .review {
-  /* background-color: hsl(300, 24%, 96%); */
-  max-width: 360px;
+  background-color: hsl(300, 24%, 96%);
+  max-width: 560px;
   padding: 10px 20px;
   border-radius: 5px;
   display: flex;
