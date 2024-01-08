@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "League Spartan";
+  font-weight: 400;
+  src: local("League Spartan"), local("LeagueSpartan-Regular"),
+    url("/src/assets/fonts/league-spartan-v11-latin-regular.woff2"),
+    url("src/assets/fonts/league-spartan-v11-latin-regular.woff");
+}
+
+@font-face {
+  font-family: "League Spartan";
+  font-weight: 500;
+  src: local("League Spartan"), local("LeagueSpartan-Medium"),
+    url("./src/assets/fonts/league-spartan-v11-latin-500.woff2"),
+    url("/src/assets/fonts/league-spartan-v11-latin-500.woff");
+}
+
+@font-face {
+  font-family: "League Spartan";
+  font-weight: 700;
+  src: local("League Spartan"), local("LeagueSpartan-Bold"),
+    url("/src/assets/fonts/league-spartan-v11-latin-700.woff2"),
+    url("src/assets/fonts/league-spartan-v11-latin-700.woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  font-family: "League Spartan", sans-serif;
+  padding: 0 20px;
+}
+
+.top-section__title {
+  color: hsl(300, 43%, 22%);
+}
+
+.reviews-container {
+  background-color: red;
+  /* max-width: 800px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reviews-container > :first-child {
+  background-color: green;
+  align-self: flex-start;
+}
+
+.reviews-container > :nth-child(2) {
+  background-color: purple;
+  align-self: center;
+}
+
+.reviews-container > :nth-child(3) {
+  background-color: orange;
+  align-self: flex-end;
+}
+
+.review {
+  /* background-color: hsl(300, 24%, 96%); */
+  max-width: 360px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.review:not(:first-child) {
+  margin-top: 10px;
+}
+
+.review__stars {
+  display: flex;
+  gap: 4px;
+}
+
+.review__text {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.card {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  max-width: 310px;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+/* Apply a margin-top to all cards except the first card */
+.card:not(:first-child) {
+  margin-top: 10px;
+}
+
+.card__profile-section {
+  /* background-color: red; */
+  max-width: 200px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__name-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card__img {
+  display: block;
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.card__name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card__verified-status {
+  color: hsl(333, 80%, 67%);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.card__testimonial {
+  margin-top: 20px;
+  line-height: 1.4;
+}
