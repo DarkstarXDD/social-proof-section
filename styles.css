@@ -28,82 +28,115 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 body {
   background-color: gray;
   font-family: "League Spartan", sans-serif;
-  padding: 0 20px;
+  padding: 48px 24px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------- Top Heading Section ---------------- */
+.top-section {
+  text-align: center;
 }
 
 .top-section__title {
   color: hsl(300, 43%, 22%);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1.43px;
+  line-height: 32px;
+  padding: 0 10px;
 }
 
-.reviews-container {
-  background-color: red;
-  max-width: 800px;
+.top-section__text {
+  /* color: hsl(302, 10%, 53%); */
+  color: black;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.63px;
+  line-height: 25px;
+  margin-top: 17px;
+}
+
+/* ---------------- Rating Section ---------------- */
+.ratings-container {
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin-top: 39px;
 }
 
-.reviews-container > :first-child {
-  align-self: flex-start;
-}
-
-.reviews-container > :nth-child(2) {
-  align-self: center;
-}
-
-.reviews-container > :nth-child(3) {
-  align-self: flex-end;
-}
-
-.review {
+.rating {
   background-color: hsl(300, 24%, 96%);
-  max-width: 560px;
-  padding: 10px 20px;
+  width: 100%;
+  max-width: 375px;
+  padding: 16px 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
 }
 
-.review:not(:first-child) {
-  margin-top: 10px;
+/* Apply a margin-top to all ratings except the first rating */
+.rating:not(:first-child) {
+  margin-top: 16px;
 }
 
-.review__stars {
+.rating__stars {
   display: flex;
-  gap: 4px;
+  gap: 8px;
 }
 
-.review__text {
+.rating__star {
+  width: 16.55px;
+  height: 15.77px;
+}
+
+.rating__text {
   color: hsl(300, 43%, 22%);
+  font-size: 17px;
   font-weight: 700;
+}
+
+/* ---------------- Card Section ---------------- */
+.cards-container {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .card {
   background-color: hsl(300, 43%, 22%);
   color: hsl(0, 0%, 100%);
-  max-width: 310px;
-  padding: 30px;
+  max-width: 420px;
+  padding: 35px 32px;
   border-radius: 8px;
-  margin-top: 40px;
 }
 
 /* Apply a margin-top to all cards except the first card */
 .card:not(:first-child) {
-  margin-top: 10px;
+  margin-top: 21px;
 }
 
 .card__profile-section {
-  /* background-color: red; */
   max-width: 200px;
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 20px;
+  gap: 23px;
 }
 
 .card__name-container {
@@ -113,24 +146,83 @@ body {
 }
 
 .card__img {
-  display: block;
   width: 40px;
   height: auto;
   border-radius: 50%;
 }
 
 .card__name {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .card__verified-status {
   color: hsl(333, 80%, 67%);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
 }
 
 .card__testimonial {
-  margin-top: 20px;
-  line-height: 1.4;
+  margin-top: 23px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  line-height: 22px;
+}
+
+/* ---------------- Media Queries ---------------- */
+@media (min-width: 425px) {
+  .reviews {
+    align-self: flex-start;
+  }
+
+  .report-guru {
+    align-self: center;
+  }
+
+  .besttech {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 500px) {
+  .colton-smith {
+    align-self: flex-start;
+  }
+
+  .irene-roberts {
+    align-items: center;
+  }
+
+  .anne-wallace {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 800px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .card {
+    max-width: 100%;
+    margin-top: 0px;
+  }
+
+  .colton-smith {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .irene-roberts {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .anne-wallace {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
 }

@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "reviewerName": "Reviews",
+    "raterName": "Reviews",
     "stars": 5
   },
   {
     "id": 2,
-    "reviewerName": "Report Guru",
+    "raterName": "Report Guru",
     "stars": 5
   },
   {
     "id": 3,
-    "reviewerName": "BestTech",
+    "raterName": "BestTech",
     "stars": 5
   }
 ]

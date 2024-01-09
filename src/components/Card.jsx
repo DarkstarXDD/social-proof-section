@@ -1,6 +1,6 @@
 export default function Card(props) {
   return (
-    <div className="card">
+    <div className={`card ${props.cardClassName}`}>
       <div className="card__profile-section">
         <img
           className="card__img"
