@@ -251,10 +251,11 @@ body {
     grid-row: 1;
     align-self: center;
     text-align: left;
+    transform: translateY(-5px);
   }
 
   .top-section__text {
-    margin-top: 28px;
+    margin-top: 27px;
   }
 
   .top-section__title {
@@ -294,7 +295,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin-top: 64px;
+    margin-top: 66px;
   }
 
   .card {
