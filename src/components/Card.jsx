@@ -10,8 +10,8 @@ export default function Card(props) {
           height="80px"
         />
         <div className="card__name-container">
-          <h2 className="card__name">{props.cardName}</h2>
-          <h2 className="card__verified-status">{props.verifiedStatus}</h2>
+          <p className="card__name">{props.cardName}</p>
+          <p className="card__verified-status">{props.verifiedStatus}</p>
         </div>
       </div>
       <p className="card__testimonial">{`"${props.cardTestimonial}"`}</p>

@@ -34,7 +34,8 @@ img {
 }
 
 body {
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: white;
   font-family: "League Spartan", sans-serif;
   padding: 48px 24px;
   min-height: 100vh;
@@ -58,8 +59,8 @@ body {
 }
 
 .top-section__text {
-  /* color: hsl(302, 10%, 53%); */
-  color: black;
+  color: hsl(302, 10%, 53%);
+  /* color: black; */
   font-size: 19px;
   font-weight: 500;
   letter-spacing: -0.63px;
@@ -111,7 +112,7 @@ body {
 
 /* ---------------- Card Section ---------------- */
 .cards-container {
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,10 +234,16 @@ body {
 }
 
 @media (min-width: 1000px) {
+  body {
+    padding: 0px;
+  }
+
   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-top: -10px;
+    /* gap: 10px; */
   }
 
   .top-section {
@@ -244,6 +251,10 @@ body {
     grid-row: 1;
     align-self: center;
     text-align: left;
+  }
+
+  .top-section__text {
+    margin-top: 28px;
   }
 
   .top-section__title {
@@ -261,6 +272,19 @@ body {
   .ratings-container {
     grid-column: 2;
     grid-row: 1;
+
+    align-self: center;
+    max-width: 540px;
+    margin-top: 0px;
+
+    transform: translateX(15px);
+  }
+
+  .rating {
+    flex-direction: row;
+    max-width: 445px;
+    padding: 20px 32px;
+    gap: 32px;
   }
 
   .cards-container {
@@ -269,10 +293,25 @@ body {
 
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 30px;
+    margin-top: 64px;
   }
 
-  .rating {
-    flex-direction: row;
+  .card {
+    max-width: 350px;
+    /* min-height: 234px; */
+    padding: 40px 32px;
+  }
+
+  .card__testimonial {
+    margin-top: 26px;
+  }
+
+  .irene-roberts {
+    transform: translateY(16px);
+  }
+
+  .anne-wallace {
+    transform: translateY(33px);
   }
 }
