@@ -42,8 +42,8 @@ export default function App() {
           services.
         </p>
       </div>
-      <div className="ratings-container">{ratings}</div>
-      <div className="cards-container">{cards}</div>
+      <div className="ratings-container flex-column">{ratings}</div>
+      <div className="cards-container flex-column">{cards}</div>
     </main>
   )
 }

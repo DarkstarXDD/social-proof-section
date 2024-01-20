@@ -1,7 +1,7 @@
 @font-face {
   font-family: "League Spartan";
   font-weight: 400;
-  src: local("League Spartan"), local("LeagueSpartan-Regular"),
+  src: local("LeagueSpartan-Regular"),
     url("/src/assets/fonts/league-spartan-v11-latin-regular.woff2"),
     url("src/assets/fonts/league-spartan-v11-latin-regular.woff");
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "League Spartan";
   font-weight: 500;
-  src: local("League Spartan"), local("LeagueSpartan-Medium"),
+  src: local("LeagueSpartan-Medium"),
     url("./src/assets/fonts/league-spartan-v11-latin-500.woff2"),
     url("/src/assets/fonts/league-spartan-v11-latin-500.woff");
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "League Spartan";
   font-weight: 700;
-  src: local("League Spartan"), local("LeagueSpartan-Bold"),
+  src: local("LeagueSpartan-Bold"),
     url("/src/assets/fonts/league-spartan-v11-latin-700.woff2"),
     url("src/assets/fonts/league-spartan-v11-latin-700.woff");
 }
@@ -34,7 +34,6 @@ img {
 }
 
 body {
-  /* background-color: gray; */
   background-color: white;
   font-family: "League Spartan", sans-serif;
   padding: 48px 24px;

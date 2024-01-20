@@ -14,7 +14,7 @@ export default function Rating(props) {
     )
   }
   return (
-    <div className={`rating ${props.ratingClassName}`}>
+    <div className={`rating flex-column ${props.ratingClassName}`}>
       <div className="rating__stars">{stars}</div>
       <p className="rating__text">
         Rated {props.numOfStars} Stars in {props.raterName}
