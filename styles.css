@@ -40,9 +40,9 @@ img {
   --fw-medium: 500;
   --fw-bold: 700;
 
-  --fs-400: 17px; /* 1.0625rem */
-  --fs-500: 19px; /* 1.1875rem */
-  --fs-900: 40px; /* 2.5rem */
+  --fs-400: 1.0625rem; /* 17px */
+  --fs-500: 1.1875rem; /* 19px */
+  --fs-900: 2.5rem; /* 40px */
 
   /* Higher the number, darker the color */
   --clr-primary-900: hsl(300, 43%, 22%);
@@ -69,15 +69,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* display: grid;
-  align-items: center; */
 }
 
 main {
-  gap: 40px;
+  gap: 2.5rem; /* 40px */
   max-width: 100%;
-  max-width: 1158px;
-  padding: 48px 24px;
+  max-width: 72.375rem; /* 1158px */
+  padding: 3rem 1.5rem; /* 48px 24px*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,48 +89,48 @@ main {
 
 .top-section__title {
   display: inline-block;
-  max-width: 300px;
+  max-width: 18.75rem; /* 300px */
   color: var(--clr-primary-900);
   font-size: var(--fs-900);
   font-weight: var(--fw-bold);
-  letter-spacing: -1.43px;
-  line-height: 32px;
+  letter-spacing: -0.089375rem; /* -1.43px */
+  line-height: 2rem; /* 32px */
 }
 
 .top-section__text {
-  max-width: 550px;
+  max-width: 34.375rem; /* 550px */
   color: var(--clr-neutral-400);
   font-size: var(--fs-500);
   font-weight: var(--fw-medium);
-  letter-spacing: -0.63px;
-  line-height: 25px;
-  margin-top: 17px;
+  letter-spacing: -0.039375rem; /* -0.63px */
+  line-height: 1.5625rem; /* 25px */
+  margin-top: 1.0625rem; /* 17px */
 }
 
 /* ---------------- Rating Section ---------------- */
 .ratings-container {
-  gap: 16px;
+  gap: 1rem; /* 16px */
   width: 100%;
-  max-width: 850px;
+  max-width: 53.125rem; /* 850px */
 }
 
 .rating {
   background-color: hsl(300, 24%, 96%);
   width: 100%;
-  max-width: 375px;
-  padding: 16px 20px;
+  max-width: 23.4375rem; /* 375px */
+  padding: 1rem 1.25rem; /* 16px 20px */
   border-radius: 5px;
-  gap: 15px;
+  gap: 0.9375rem; /* 15px */
 }
 
 .rating__stars {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem; /* 8px */
 }
 
 .rating__star {
-  width: 16.55px;
-  height: 15.77px;
+  width: 1.034375rem; /* 16.55px */
+  height: 0.985625rem; /* 15.77px */
 }
 
 .rating__text {
@@ -150,35 +148,35 @@ main {
 
 /* ---------------- Card Section ---------------- */
 .cards-container {
-  gap: 21px;
+  gap: 1.3125rem; /* 21px */
   width: 100%;
 }
 
 .card {
   background-color: var(--clr-primary-900);
   color: var(--clr-neutral-100);
-  max-width: 420px;
-  padding: 35px 32px;
+  max-width: 26.25rem; /* 420px */
+  padding: 2.1875rem 2rem; /* 35px 32px */
   border-radius: 8px;
   align-items: flex-start;
-  gap: 26px; /* 23px */
+  gap: 1.625rem; /* 26px */
 }
 
 .card__profile-section {
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 23px;
+  gap: 1.4375rem; /* 23px */
 }
 
 .card__img {
-  width: 40px;
+  width: 2.5rem; /* 40px */
   height: auto;
   border-radius: 50%;
 }
 
 .card__name-container {
-  gap: 4px;
+  gap: 0.25rem; /* 4px */
 }
 
 .card__name {
@@ -191,8 +189,8 @@ main {
 
 .card__testimonial {
   font-weight: var(--fw-medium);
-  letter-spacing: -0.3px;
-  line-height: 22px;
+  letter-spacing: -0.01875rem; /* -0.3px */
+  line-height: 1.375rem; /* 22px */
 }
 
 .colton-smith {
@@ -205,36 +203,36 @@ main {
 
 /* ---------------- Media Queries ---------------- */
 /* ---------------- 440px ---------------- */
-@media (min-width: 440px) {
+@media (min-width: 27.5rem) {
   .top-section__title {
-    max-width: 400px;
+    max-width: 25rem; /* 400px */
   }
 }
 
 /* ---------------- 600px ---------------- */
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   .rating {
-    max-width: 445px;
+    max-width: 27.8125rem; /* 445px */
     flex-direction: row;
-    padding: 20px 32px;
-    gap: 32px;
+    padding: 1.25rem 2rem; /* 20px 32px */
+    gap: 2rem; /* 32px */
   }
 }
 
 /* ---------------- 910px ---------------- */
-@media (min-width: 910px) {
+@media (min-width: 56.875rem) {
   :root {
-    --fs-900: 56px;
+    --fs-900: 3.5rem; /* 56px */
   }
 
   .top-section__title {
-    max-width: 545px;
-    letter-spacing: -2px;
-    line-height: 48px;
+    max-width: 34.0625rem; /* 545px */
+    letter-spacing: -0.125rem; /* -2px */
+    line-height: 3rem; /* 48px */
   }
 
   .top-section__text {
-    margin-top: 27px;
+    margin-top: 1.6875rem; /* 27px */
   }
 
   .cards-container {
@@ -244,13 +242,13 @@ main {
   }
 }
 
-/* ---------------- 1000px ---------------- */
-@media (min-width: 1160px) {
+/* ---------------- 1160px ---------------- */
+@media (min-width: 72.5rem) {
   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    row-gap: 66px;
+    row-gap: 4.125rem; /* 66px */
   }
 
   .top-section {
@@ -258,42 +256,42 @@ main {
   }
 
   .top-section__title {
-    max-width: 445px;
+    max-width: 27.8125rem; /* 445px */
   }
 
   .top-section__text {
-    max-width: 445px;
+    max-width: 27.8125rem; /* 445px */
   }
 
   .ratings-container {
-    max-width: 540px;
+    max-width: 33.75rem; /* 540px */
   }
 
   .cards-container {
     grid-column: 1 / span 2;
-    gap: 30px;
+    gap: 1.875rem; /* 30px */
   }
 
   .card {
-    max-width: 350px;
-    padding: 40px 32px;
+    max-width: 21.875rem; /* 350px */
+    padding: 2.5rem 2rem; /* 40px 32px */
   }
 
   .irene-roberts {
-    transform: translateY(16px);
+    transform: translateY(1rem); /* 16px */
   }
 
   .anne-wallace {
-    transform: translateY(33px);
+    transform: translateY(2.0625rem); /* 33px */
   }
 
   /* Slight tweaks to match exactly with the frontendmentor design */
   /* These values can be removed anytime  */
   main {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem); /* -5px */
   }
 
   .top-section {
-    transform: translateY(-4px);
+    transform: translateY(-0.25rem); /* -4px */
   }
 }
