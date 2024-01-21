@@ -66,14 +66,17 @@ body {
   font-size: var(--fs-400);
   font-family: var(--ff-league-spartan);
   min-height: 100vh;
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* display: grid;
+  align-items: center; */
 }
 
 main {
   gap: 40px;
   max-width: 100%;
-  max-width: 1160px;
+  max-width: 1158px;
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
@@ -158,7 +161,7 @@ main {
   padding: 35px 32px;
   border-radius: 8px;
   align-items: flex-start;
-  gap: 23px;
+  gap: 26px; /* 23px */
 }
 
 .card__profile-section {
@@ -220,6 +223,20 @@ main {
 
 /* ---------------- 910px ---------------- */
 @media (min-width: 910px) {
+  :root {
+    --fs-900: 56px;
+  }
+
+  .top-section__title {
+    max-width: 545px;
+    letter-spacing: -2px;
+    line-height: 48px;
+  }
+
+  .top-section__text {
+    margin-top: 27px;
+  }
+
   .cards-container {
     flex-direction: row;
     justify-content: center;
@@ -228,11 +245,7 @@ main {
 }
 
 /* ---------------- 1000px ---------------- */
-@media (min-width: 1000px) {
-  :root {
-    --fs-900: 56px; /* 3.5rem */
-  }
-
+@media (min-width: 1160px) {
   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -246,13 +259,10 @@ main {
 
   .top-section__title {
     max-width: 445px;
-    letter-spacing: -2px;
-    line-height: 48px;
   }
 
   .top-section__text {
     max-width: 445px;
-    margin-top: 27px;
   }
 
   .ratings-container {
@@ -267,5 +277,23 @@ main {
   .card {
     max-width: 350px;
     padding: 40px 32px;
+  }
+
+  .irene-roberts {
+    transform: translateY(16px);
+  }
+
+  .anne-wallace {
+    transform: translateY(33px);
+  }
+
+  /* Slight tweaks to match exactly with the frontendmentor design */
+  /* These values can be removed anytime  */
+  main {
+    transform: translateY(-5px);
+  }
+
+  .top-section {
+    transform: translateY(-4px);
   }
 }
