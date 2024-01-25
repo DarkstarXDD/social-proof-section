@@ -6,15 +6,15 @@ export default function Card(props) {
           className="card__img"
           src={props.cardImg}
           alt={props.cardName}
-          width="80px"
-          height="80px"
+          width="80"
+          height="80"
         />
         <div className="card__name-container flex-column">
           <p className="card__name">{props.cardName}</p>
           <p className="card__verified-status">{props.verifiedStatus}</p>
         </div>
       </div>
-      <p className="card__testimonial">{`"${props.cardTestimonial}"`}</p>
+      <blockquote className="card__testimonial">{`"${props.cardTestimonial}"`}</blockquote>
     </li>
   )
 }

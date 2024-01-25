@@ -8,8 +8,8 @@ export default function Rating(props) {
         className="rating__star"
         src="./icon-star.svg"
         alt=""
-        width="17px"
-        height="16px"
+        width="17"
+        height="16"
       />
     )
   }
