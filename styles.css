@@ -71,6 +71,12 @@ img {
 /* ------------ End of Utility Classes ------------ */
 
 body {
+  background-image: url(./public/bg-images/bg-pattern-top-mobile.svg),
+    url(./public/bg-images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0, 100% 100%;
+  background-size: 374px 232px, 100vw 32vh;
+
   background-color: var(--clr-neutral-100);
   font-size: var(--fs-400);
   font-family: var(--ff-league-spartan);
@@ -241,6 +247,12 @@ main {
 @media (min-width: 56.875rem) {
   :root {
     --fs-900: 3.5rem; /* 56px */
+  }
+
+  body {
+    background-image: url(./public/bg-images/bg-pattern-top-desktop.svg),
+      url(./public/bg-images/bg-pattern-bottom-desktop.svg);
+    background-size: initial;
   }
 
   .top-section__title {
