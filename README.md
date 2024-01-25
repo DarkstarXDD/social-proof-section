@@ -2,7 +2,7 @@
 
 This is a solution to the [Social Proof Section challenge on FrontendMentor.io](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA).
 
-### Screenshots of My Solution (Desktop & Mobile) 👻
+### Screenshots of My Solution (Desktop & Mobile) 🔍
 
 ![](./solution_screenshots/screenshot_desktop.jpeg)
 ![](./solution_screenshots/screenshot_mobile.jpeg)
@@ -11,7 +11,7 @@ This is a solution to the [Social Proof Section challenge on FrontendMentor.io](
 
 ### Links 🔗
 
-- Live Site URL:
+- Live Site URL: https://social-proof-section-darkstarxdd.vercel.app/
 - Solution URL:
 
 #
@@ -20,13 +20,13 @@ This is a solution to the [Social Proof Section challenge on FrontendMentor.io](
 
 - Mobile Responsive 📱
 - Self-hosted Fonts 🔡
-- PWA (Progressive Web App) 📱
 
 #
 
 ### Built with 🔧🔨
 
 - React ❄️
+- Vite 🌠
 - Grid & Flex Layouts 🔲
 - Mobile First Approach 📱
 - BEM Naming Convention 📚
@@ -35,7 +35,14 @@ This is a solution to the [Social Proof Section challenge on FrontendMentor.io](
 
 ### New Things I Learned 🎓📖
 
+- Visually hidden elements.
+
 #
+
+### Helpful Resources 📜
+
+- [Scott O'Hara - Hiding Content Visually](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html#hiding-content-visually)
+- [James Edwards - The anatomy of visually-hidden](https://www.tpgi.com/the-anatomy-of-visually-hidden/)
 
 ### Tools I Used 🔧
 
@@ -50,6 +57,8 @@ This is a solution to the [Social Proof Section challenge on FrontendMentor.io](
 - [pwa-asset-generator](https://github.com/elegantapp/pwa-asset-generator) - Generates favicons, icon and splash screen images. Updates manifest.json and index.html files with the generated images according to Web App Manifest specs and Apple Human Interface guidelines.
 
 - [webfont-generator](https://www.fontsquirrel.com/tools/webfont-generator) - Convert your TTF fonts to WOFF and WOFF2 formats.
+
+- [google webfonts helper](https://gwfh.mranftl.com/fonts) - Another tool to convert your TTF fonts to WOFF and WOFF2 formats, but much easier to use than the above.
 
 #
 
