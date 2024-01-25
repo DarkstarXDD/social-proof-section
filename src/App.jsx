@@ -42,8 +42,14 @@ export default function App() {
           services.
         </p>
       </div>
-      <div className="ratings-container flex-column">{ratings}</div>
-      <div className="cards-container flex-column">{cards}</div>
+      <section className="ratings-section">
+        <h2 className="visually-hidden">Ratings</h2>
+        <ul className="ratings-container flex-column">{ratings}</ul>
+      </section>
+      <section className="cards-section">
+        <h2 className="visually-hidden">Testimonials</h2>
+        <ul className="cards-container flex-column">{cards}</ul>
+      </section>
     </main>
   )
 }

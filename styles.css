@@ -59,6 +59,15 @@ img {
   flex-direction: column;
   align-items: center;
 }
+
+.visually-hidden:not(:focus):not(:active) {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 /* ------------ End of Utility Classes ------------ */
 
 body {
@@ -108,10 +117,15 @@ main {
 }
 
 /* ---------------- Rating Section ---------------- */
+.ratings-section {
+  width: 100%;
+  max-width: 53.125rem; /* 850px */
+}
+
 .ratings-container {
   gap: 1rem; /* 16px */
   width: 100%;
-  max-width: 53.125rem; /* 850px */
+  /* max-width: 53.125rem; */
 }
 
 .rating {
@@ -147,6 +161,10 @@ main {
 }
 
 /* ---------------- Card Section ---------------- */
+.cards-section {
+  width: 100%;
+}
+
 .cards-container {
   gap: 1.3125rem; /* 21px */
   width: 100%;
@@ -267,8 +285,12 @@ main {
     max-width: 33.75rem; /* 540px */
   }
 
-  .cards-container {
+  .cards-section {
     grid-column: 1 / span 2;
+  }
+
+  .cards-container {
+    /* grid-column: 1 / span 2; */
     gap: 1.875rem; /* 30px */
   }
 

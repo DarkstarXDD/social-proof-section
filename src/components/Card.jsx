@@ -1,6 +1,6 @@
 export default function Card(props) {
   return (
-    <div className={`card flex-column ${props.cardClassName}`}>
+    <li className={`card flex-column ${props.cardClassName}`}>
       <div className="card__profile-section">
         <img
           className="card__img"
@@ -15,6 +15,6 @@ export default function Card(props) {
         </div>
       </div>
       <p className="card__testimonial">{`"${props.cardTestimonial}"`}</p>
-    </div>
+    </li>
   )
 }
