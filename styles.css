@@ -46,8 +46,8 @@ img {
 
   /* Higher the number, darker the color */
   --clr-primary-900: hsl(300, 43%, 22%);
-  --clr-primary-600: hsl(333, 80%, 67%);
-  /* --clr-primary-600: hsl(332, 78%, 93%); */
+  /* --clr-primary-600: hsl(333, 80%, 67%); */
+  --clr-primary-600: hsl(332, 78%, 93%);
 
   --clr-neutral-400: hsl(302, 10%, 53%);
   --clr-neutral-200: hsl(300, 24%, 96%);
