@@ -12,7 +12,7 @@ This is a solution to the [Social Proof Section challenge on FrontendMentor.io](
 ### Links 🔗
 
 - Live Site URL: https://social-proof-section-darkstarxdd.vercel.app/
-- Solution URL:
+- Solution URL: https://www.frontendmentor.io/solutions/social-proof-section-XiQTKQra1B
 
 #
 
@@ -43,6 +43,8 @@ This is a solution to the [Social Proof Section challenge on FrontendMentor.io](
 
 - [Scott O'Hara - Hiding Content Visually](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html#hiding-content-visually)
 - [James Edwards - The anatomy of visually-hidden](https://www.tpgi.com/the-anatomy-of-visually-hidden/)
+
+#
 
 ### Tools I Used 🔧
 
