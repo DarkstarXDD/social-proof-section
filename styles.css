@@ -72,8 +72,8 @@ img {
 /* ------------ End of Utility Classes ------------ */
 
 body {
-  background-image: url(./bg-images/bg-pattern-top-mobile.svg),
-    url(./bg-images/bg-pattern-bottom-mobile.svg);
+  background-image: url(./src/assets/bg-images/bg-pattern-top-mobile.svg),
+    url(./src/assets/bg-images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat;
   background-position: 0 0, 100% 100%;
   background-size: 23.375rem 14.5rem, 100vw 32vh;
@@ -250,8 +250,8 @@ main {
   }
 
   body {
-    background-image: url(./bg-images/bg-pattern-top-desktop.svg),
-      url(./bg-images/bg-pattern-bottom-desktop.svg);
+    background-image: url(./src/assets/bg-images/bg-pattern-top-desktop.svg),
+      url(./src/assets/bg-images/bg-pattern-bottom-desktop.svg);
     background-size: initial;
   }
 
